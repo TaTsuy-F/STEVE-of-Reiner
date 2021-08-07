@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<header></header>
+<body>
+    <center>
+    <h1>STEVEへようこそ</h1>
+    <a href="STEVE表紙.html">STEVEを始める</a>
+    <script type="text/javascript">
+        function first(){
+          var user = prompt("パスワードを入力");
+          if(user==false || user==null){
+            alert("どうしてお前らは…パスワードを…入力してくれないんだ…");
+            first();
+          }else{
+            document.title=user;
+          }
+          var passWord="kyanpasulife"
+          if(user==passWord){
+            alert("ようこそ");
+          }else{
+            alert("本当にそう思っているのか？");
+            first();
+          }
+        }
+      window.onload=first();
+    </script>
+    </center>
+</body>
