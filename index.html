@@ -6,16 +6,17 @@
     <a href="STEVE表紙.html">STEVEを始める</a>
     <script type="text/javascript">
         function first(){
-          var user = prompt("パスワードを入力");
+          var user = prompt("名前を入力");
           if(user==null){
-            alert("どうしてお前らは…パスワードを…入力してくれないんだ…");
+            alert("どうしてお前らは…名前を…入力してくれないんだ…");
             first();
           }else{
             document.title=user;
           }
+          var pass=prompt("よう…"user+"…パスワードを入力してくれ…")
           var passWord="kyanpasulife"
-          if(document.title==passWord){
-            alert("ようこそ");
+          if(pass==passWord){
+            alert("四年ぶりだな…"+user);
           }else{
             alert("(パスワードが)違う…違うんだ");
             first();
